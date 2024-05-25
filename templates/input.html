@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Health Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Machine Prediction</h1>
+    <form method="POST" action="/input">
+        <label for="Type">Type:</label>
+        <select id="Type" name="Type" required>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="H">H</option>
+        </select><br>
+
+
+        <label for="Air_temperature">Air Temperature [K]:</label>
+        <input type="number" id="Air_temperature" name="Air_temperature" step="0.01" required><br>
+
+        <label for="Process_temperature">Process Temperature [K]:</label>
+        <input type="number" id="Process_temperature" name="Process_temperature" step="0.01" required><br>
+
+        <label for="Rotational_speed">Rotational Speed [rpm]:</label>
+        <input type="number" id="Rotational_speed" name="Rotational_speed" step="0.01" required><br>
+
+        <label for="Torque">Torque [Nm]:</label>
+        <input type="number" id="Torque" name="Torque" step="0.01" required><br>
+
+        <label for="Tool_wear">Tool Wear [min]:</label>
+        <input type="number" id="Tool_wear" name="Tool_wear" step="0.01" required><br>
+
+        <label for="Temperature_Difference">Temperature Difference:</label>
+        <input type="number" id="Temperature_Difference" name="Temperature_Difference" step="0.01" required><br>
+
+        <label for="Power">Power:</label>
+        <input type="number" id="Power" name="Power" step="0.01" required><br>
+
+        <label for="Mean_Temperature">Mean Temperature:</label>
+        <input type="number" id="Mean_Temperature" name="Mean_Temperature" step="0.01" required><br>
+
+        <label for="Wear_strain">Wear Strain:</label>
+        <input type="number" id="Wear_strain" name="Wear_strain" step="0.01" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

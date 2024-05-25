@@ -1,0 +1,3 @@
+{"Type": {"M":1, "L":2, "H":3},"columns": ["Type", "Air temperature [K]", "Process temperature [K]"
+,"Rotational speed [rpm]", "Torque [Nm]","Tool wear [min]", "Temperature Difference", 
+"Power","Mean Temperature", "Wear strain"]}
